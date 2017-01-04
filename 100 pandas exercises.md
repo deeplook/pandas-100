@@ -1,9 +1,9 @@
 
-# 100 pandas exercises
+# (Not yet) 100 pandas exercises
 
 This is a collection of exercises that have been collected by condensing various sources like project source code and the available documentation on pandas. The goal of this collection is to offer a quick reference for both old and new users but also to provide a set of exercices for those who teach.
 
-If you find an error or think you've a better way to solve some of them, feel free to open an issue at <https://github.com/deeplook/pandas-100>
+If you want to suggest another exercise or find an error or think you've a better way to solve some of them, feel free to open an issue or pull request at <https://github.com/deeplook/pandas-100>
 
 #### 1. Import the pandas package under the name `pd` (★☆☆)
 
