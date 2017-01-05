@@ -26,7 +26,7 @@ pd.show_versions()
 ```python
 basic = 'http://www.lenntech.com'
 path = '/periodic-chart-elements/melting-point.htm'
-pd.read_html(basic + path)
+df = pd.read_html(basic + path)
 ```
 
 
