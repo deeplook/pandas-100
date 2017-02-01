@@ -29,6 +29,107 @@ path = '/periodic-chart-elements/melting-point.htm'
 df = pd.read_html(basic + path)
 ```
 
+#### 50. Read a CSV file into a dataframe like the tables on https://www.ssa.gov/oact/babynames/limits.html (★☆☆)
+
+```python
+df = pd.read_csv(fn, names=['name', 'gender',
+                            'count'])
+```
+
+#### 51. Create a new column in a data frame with the same value in all rows (★☆☆)
+
+```python
+df['year'] = 2017
+```
+
+#### 52. Merge a list of dataframes into one (★★☆)
+
+```python
+df_list = [df1, df2, df3]
+df = pd.concat(df_list)
+```
+
+#### 53. Filter by one column (★★☆)
+
+```python
+girls = df[df['gender'] == 'F']
+```
+
+#### 54. Select one column of a dataframe (★☆☆)
+
+```python
+names = df['name']
+```
+
+#### 55. Select two columns of a dataframe (★★☆)
+
+```python
+names = df[['name', 'year']]
+```
+
+#### 56. Use a column as index (★★☆)
+
+```python
+by_year = df.set_index('year')
+```
+
+
+#### 57. Select every 20th entry of a dataframe (★☆☆)
+
+```python
+df = df[::20]
+```
+
+#### 58. Show summary of a dataframe (★☆☆)
+
+```python
+df.describe()
+```
+
+#### 59. Show all values in one column and how often they occur (★☆☆)
+
+```python
+df.values_counts()
+```
+
+#### 70. Turn a column to upper case (★★☆)
+
+```python
+def upper(s): return s.upper()
+
+up = df['name'].apply(upper)
+```
+
+#### 71. Sum up values of one column grouped by another (★★☆)
+
+```python
+groups = names.groupby('name')['count'].apply(sum)
+```
+
+#### 72. TODO melt a dataframe?? (★★☆)
+
+```python
+pd.melt
+```
+df.drop
+
+
+#### 73. Remove column from a dataframe CHECK (★☆☆)
+
+```python
+df.drop('name')
+```
+
+#### 80. Plot a dataframe (★★★)
+
+```python
+import matplotlib.pyplot as plt
+madonna = df[df['name'] == 'Madonna']
+madonna = madonna.set_index('year')
+madonna.plot()
+plt.show()
+```
+
 
 #### 99. //Add your suggested question including rating here// (★☆☆)
 

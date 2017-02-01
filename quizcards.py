@@ -12,7 +12,7 @@ Dependencies:
 
 Usage:
 
-    python3 quizcards.py "100 Numpy exercises.md"
+    python3 quizcards.py "100 pandas exercises.md"
 """
 
 import re
